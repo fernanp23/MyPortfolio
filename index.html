@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Fernando</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/profile.jpg" alt="">
+            </div>
+            <h1>FERNANDO PEÑA</h1>
+            <h2>Tecnólogo en gestión de redes de datos - Desarrollador frontend</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/fernando-pena-rua/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/fernanp23"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Fernando Peña.</span> Soy un profesional con amplios conocimientos en hardware y software. 
+                Tengo experiencia en el manejo de bases de datos y en la realización de inventarios de equipos. 
+                Me especializo en la reparación de aplicaciones y brindo soporte remoto y en sitio a los usuarios. 
+                Además, llevo a cabo el mantenimiento preventivo y correctivo de equipos, así como el reemplazo de piezas cuando es necesario. 
+                Mi objetivo es garantizar el correcto funcionamiento de los sistemas informáticos y brindar un excelente servicio al cliente. 
+                Actualmente estoy buscando una oportunidad laboral en el sector tecnológico cómo soporte TI. 
+                Me gustaría adquirir experiencia en el desarrollo frontend utilizando tecnologías como HTML, CSS, Javascript y React. 
+                Soy un estudiante de Oracle Alura Latam y tengo habilidades intermedias en el manejo de Excel y AutoCAD, las cuales estoy mejorando constantemente. 
+                Estoy abierto a cualquier oportunidad que me permita desarrollar mis habilidades en estos campos.
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            26-06-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (57)3014027533
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            fernanpr23@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Colombia
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-skating"></i>
+                            <span>PATINAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-chess"></i>
+                            <span>AJEDREZ</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-video"></i>
+                            <span>PELÍCULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>  
+                    
+                    </div>
+                </div>
+            </div>
+            <a href="img/CV Fernando Peña.pdf">
+            <button>
+                Descargar CV<i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Developer Skills -->
+                <div class="col">
+                    <h3>Developer Skills</h3>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Design Skills -->
+                <div class="col">
+                    <h3>Design Skills</h3>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bootstrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>AutoCAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollador Frontend</h4>
+                        <span class="casa">Alura latam (Oracle One)</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnólogo en gestión de redes de datos</h4>
+                        <span class="casa">Servicio Nacional de Aprendizaje (SENA)</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller técnico en diseño gráfico</h4>
+                        <span class="casa">Institución universitaria (ITSA)</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Soporte TI: Agente Mesa de ayuda</h4>
+                        <span class="casa">Tecnoglass</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Soporte técnico: Configuración de telefonía IP, instalación y configuración de impresoras, soporte remoto y en sitio, atención a usuarios, instalación de sistemas operativos Windows y Linux. <br>
+                            Gestión de aplicaciones: Instalación de aplicaciones como SAP, Tecnosoft, AutoCAD e Inventor. Instalación y soporte de productos Autodesk como AutoCAD e Inventor. <br>
+                            Mantenimiento de equipos: Mantenimiento preventivo y correctivo de equipos, cambio de piezas en PC como disco duro y memoria RAM. Realización de inventario de equipos.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <a href="https://fernanp23.github.io/encriptadorONE/">
+                <div class="proyecto">
+                    <img src="img/proyecto1.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Encriptador de texto Alura</h3>
+                        <p>HTML y CSS</p>
+                    </div>
+                </div>
+                </a>
+                <a href="https://fernanp23.github.io/PortafolioONE/">
+                <div class="proyecto">
+                    <img src="img/proyecto2.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Portafolio Alura</h3>
+                        <p>HTML y CSS</p>
+                    </div>
+                </div>
+                </a>
+                <a href="https://fernanp23.github.io/EcomerceONE/">
+                <div class="proyecto">
+                    <img src="img/proyecto3.PNG" alt="">
+                    <div class="overlay">
+                        <h3>Ecommerce Alura</h3>
+                        <p>HTML, CSS Y Javascript</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="https://formspree.io/f/xbjeqynd" method="post">
+                <div class="col">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="telefono" placeholder="Teléfono">
+                    <input type="text" name="correo" placeholder="Correo">
+                    <input type="text" name="asunto" placeholder="Asunto">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/fernando-pena-rua/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/fernanp23"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
